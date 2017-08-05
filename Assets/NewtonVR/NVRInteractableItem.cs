@@ -271,9 +271,6 @@ namespace NewtonVR
 
         public override void EndInteraction(NVRHand hand)
         {
-			if (GetComponent<WireEnd> ()) 
-				GetComponent<WireEnd> ().DetachFromSocket ();
-
 			base.EndInteraction(hand);
 
             if (hand == null)

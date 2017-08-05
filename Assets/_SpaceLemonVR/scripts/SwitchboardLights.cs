@@ -8,11 +8,11 @@ public class SwitchboardLights : MonoBehaviour
 	{
 		if (attaching) 
 		{
-			Debug.Log ("attach");
+			Debug.Log ("attach 1");
 		} 
 		else 
 		{
-			Debug.Log ("detach");
+			Debug.Log ("detach 1");
 		}
 	}
 }
