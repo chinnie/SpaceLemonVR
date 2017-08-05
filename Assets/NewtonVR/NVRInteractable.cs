@@ -118,6 +118,8 @@ namespace NewtonVR
             if (DisableKinematicOnAttach == true)
             {
                 Rigidbody.isKinematic = false;
+				if(GetComponent<WireEnd>())
+					Rigidbody.useGravity = false;
             }
         }
 

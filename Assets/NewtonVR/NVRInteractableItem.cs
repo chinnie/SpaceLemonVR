@@ -271,7 +271,10 @@ namespace NewtonVR
 
         public override void EndInteraction(NVRHand hand)
         {
-            base.EndInteraction(hand);
+			if (GetComponent<WireEnd> ()) 
+				GetComponent<WireEnd> ().DetachFromSocket ();
+
+			base.EndInteraction(hand);
 
             if (hand == null)
             {
@@ -307,7 +310,7 @@ namespace NewtonVR
                 {
                     OnEndInteraction.Invoke();
                 }
-            }
+            }				
         }
 
         public override void HoveringUpdate(NVRHand hand, float forTime)
