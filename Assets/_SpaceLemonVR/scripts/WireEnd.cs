@@ -21,10 +21,19 @@ public class WireEnd : MonoBehaviour
 
 	void OnTriggerStay(Collider hit)
 	{
-		if (hit.GetComponent<WireSocket> () && thisRB.useGravity) 
+		if (hit.GetComponent<WireSocket> () && null == currentSocket && thisRB.useGravity) 
 		{
 			AttachToSocket (hit.GetComponent<WireSocket>());
-			Debug.Log ("attach");
+			Debug.Log ("attach 2");
+		}
+	}
+
+	void OnTriggerExit(Collider hit)
+	{
+		if (hit.GetComponent<WireSocket> () && null != currentSocket) 
+		{
+			DetachFromSocket ();
+			Debug.Log ("detach 2");
 		}
 	}
 
