@@ -5,10 +5,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 403292}
-  - 114: {fileID: 11464396}
+  - component: {fileID: 403292}
+  - component: {fileID: 11464396}
   m_Layer: 0
   m_Name: RightHand
   m_TagString: Untagged
@@ -21,10 +21,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 449252}
-  - 114: {fileID: 11419036}
+  - component: {fileID: 449252}
+  - component: {fileID: 11419036}
   m_Layer: 0
   m_Name: LeftHand
   m_TagString: Untagged
@@ -37,12 +37,12 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 478642}
-  - 114: {fileID: 11457864}
-  - 114: {fileID: 11439526}
-  - 114: {fileID: 11424654}
+  - component: {fileID: 478642}
+  - component: {fileID: 11457864}
+  - component: {fileID: 11439526}
+  - component: {fileID: 11424654}
   m_Layer: 0
   m_Name: NVRPlayer
   m_TagString: Untagged
@@ -59,10 +59,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 478642}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &449252
 Transform:
   m_ObjectHideFlags: 1
@@ -72,10 +72,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 478642}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &478642
 Transform:
   m_ObjectHideFlags: 1
@@ -85,13 +85,13 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 4000011751482340}
   - {fileID: 449252}
   - {fileID: 403292}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11419036
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -104,15 +104,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HoldButton: 2
-  HoldButtonDown: 0
-  HoldButtonUp: 0
-  HoldButtonPressed: 0
-  HoldButtonAxis: 0
   UseButton: 17
-  UseButtonDown: 0
-  UseButtonUp: 0
-  UseButtonPressed: 0
-  UseButtonAxis: 0
   IsRight: 0
   IsLeft: 0
   Player: {fileID: 0}
@@ -122,6 +114,17 @@ MonoBehaviour:
   CustomPhysicalColliders: {fileID: 0}
   CurrentHandState: 0
   CurrentlyInteracting: {fileID: 0}
+  OnBeginInteraction:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: NewtonVR.NVRHand+NVRInteractableEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnEndInteraction:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: NewtonVR.NVRHand+NVRInteractableEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  PhysicalController: {fileID: 0}
 --- !u!114 &11424654
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -171,7 +174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 692596da9ff9cdd4aa3dd605c1e0df5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SteamVREnabled: 0
+  SteamVREnabled: 1
   OculusSDKEnabled: 0
   InteractionStyle: 0
   PhysicalHands: 1
@@ -235,15 +238,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HoldButton: 2
-  HoldButtonDown: 0
-  HoldButtonUp: 0
-  HoldButtonPressed: 0
-  HoldButtonAxis: 0
   UseButton: 17
-  UseButtonDown: 0
-  UseButtonUp: 0
-  UseButtonPressed: 0
-  UseButtonAxis: 0
   IsRight: 0
   IsLeft: 0
   Player: {fileID: 0}
@@ -253,6 +248,17 @@ MonoBehaviour:
   CustomPhysicalColliders: {fileID: 0}
   CurrentHandState: 0
   CurrentlyInteracting: {fileID: 0}
+  OnBeginInteraction:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: NewtonVR.NVRHand+NVRInteractableEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnEndInteraction:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: NewtonVR.NVRHand+NVRInteractableEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  PhysicalController: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -273,14 +279,14 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 4000011751482340}
-  - 114: {fileID: 114000011294332214}
-  - 20: {fileID: 20000010622200848}
-  - 92: {fileID: 92000013402849364}
-  - 124: {fileID: 124000013977819758}
-  - 81: {fileID: 81000014173449286}
+  - component: {fileID: 4000011751482340}
+  - component: {fileID: 114000011294332214}
+  - component: {fileID: 20000010622200848}
+  - component: {fileID: 92000013402849364}
+  - component: {fileID: 124000013977819758}
+  - component: {fileID: 81000014173449286}
   m_Layer: 0
   m_Name: Head
   m_TagString: MainCamera
@@ -297,10 +303,10 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 478642}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &20000010622200848
 Camera:
   m_ObjectHideFlags: 1
@@ -331,6 +337,8 @@ Camera:
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 0
+  m_AllowMSAA: 1
+  m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022

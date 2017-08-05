@@ -16,13 +16,13 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 4000010553649410}
-  - 54: {fileID: 54000012435279980}
-  - 114: {fileID: 114000011269882622}
-  - 138: {fileID: 138000011675081008}
-  - 114: {fileID: 114000011334823172}
+  - component: {fileID: 4000010553649410}
+  - component: {fileID: 54000012435279980}
+  - component: {fileID: 114000011269882622}
+  - component: {fileID: 138000011675081008}
+  - component: {fileID: 114000011334823172}
   m_Layer: 0
   m_Name: NVRExampleApple
   m_TagString: Untagged
@@ -35,12 +35,12 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 4000012838475956}
-  - 33: {fileID: 33000012086691276}
-  - 23: {fileID: 23000014052269048}
-  - 65: {fileID: 65000012558731690}
+  - component: {fileID: 4000012838475956}
+  - component: {fileID: 33000012086691276}
+  - component: {fileID: 23000014052269048}
+  - component: {fileID: 65000012558731690}
   m_Layer: 0
   m_Name: stem
   m_TagString: Untagged
@@ -53,12 +53,12 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 4000010760340850}
-  - 33: {fileID: 33000011368661628}
-  - 23: {fileID: 23000011329146014}
-  - 65: {fileID: 65000011696625260}
+  - component: {fileID: 4000010760340850}
+  - component: {fileID: 33000011368661628}
+  - component: {fileID: 23000011329146014}
+  - component: {fileID: 65000011696625260}
   m_Layer: 0
   m_Name: LEAF1
   m_TagString: Untagged
@@ -71,12 +71,12 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 4000011897021024}
-  - 33: {fileID: 33000013930075654}
-  - 23: {fileID: 23000014091826428}
-  - 135: {fileID: 135000011567650932}
+  - component: {fileID: 4000011897021024}
+  - component: {fileID: 33000013930075654}
+  - component: {fileID: 23000014091826428}
+  - component: {fileID: 135000011567650932}
   m_Layer: 0
   m_Name: apple1
   m_TagString: Untagged
@@ -89,12 +89,12 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 4000013568934776}
-  - 33: {fileID: 33000014240497338}
-  - 23: {fileID: 23000013817919562}
-  - 65: {fileID: 65000011392058502}
+  - component: {fileID: 4000013568934776}
+  - component: {fileID: 33000014240497338}
+  - component: {fileID: 23000013817919562}
+  - component: {fileID: 65000011392058502}
   m_Layer: 0
   m_Name: LEAF
   m_TagString: Untagged
@@ -111,7 +111,6 @@ Transform:
   m_LocalRotation: {x: -0, y: 0.9659252, z: -0, w: 0.25882143}
   m_LocalPosition: {x: 1.8055921, y: 1.7705156, z: 2.544883}
   m_LocalScale: {x: 1.5000013, y: 1.4999999, z: 1.5000013}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 4000011897021024}
   - {fileID: 4000013568934776}
@@ -119,6 +118,7 @@ Transform:
   - {fileID: 4000012838475956}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4000010760340850
 Transform:
   m_ObjectHideFlags: 1
@@ -128,10 +128,10 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.1364969, y: -1.1783458, z: -0.4196651}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000010553649410}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4000011897021024
 Transform:
   m_ObjectHideFlags: 1
@@ -141,10 +141,10 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.1364969, y: -1.1783458, z: -0.4196651}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000010553649410}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4000012838475956
 Transform:
   m_ObjectHideFlags: 1
@@ -154,10 +154,10 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.1364969, y: -1.1783458, z: -0.4196651}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000010553649410}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4000013568934776
 Transform:
   m_ObjectHideFlags: 1
@@ -167,10 +167,10 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.1364969, y: -1.1783458, z: -0.4196651}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000010553649410}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &23000011329146014
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -185,7 +185,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: 0f27f15dc009282438c98d3f252ab710, type: 2}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
@@ -193,12 +195,13 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_SelectedWireframeHidden: 0
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &23000013817919562
 MeshRenderer:
@@ -214,7 +217,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: 0f27f15dc009282438c98d3f252ab710, type: 2}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
@@ -222,12 +227,13 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_SelectedWireframeHidden: 0
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &23000014052269048
 MeshRenderer:
@@ -243,7 +249,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: 5a61da1de3231ea43bb3a58b7729bbe6, type: 2}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
@@ -251,12 +259,13 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_SelectedWireframeHidden: 0
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &23000014091826428
 MeshRenderer:
@@ -272,7 +281,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: 120653844e34fb44c907d685a2218434, type: 2}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
@@ -280,12 +291,13 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_SelectedWireframeHidden: 0
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!33 &33000011368661628
 MeshFilter:
@@ -379,11 +391,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Rigidbody: {fileID: 0}
   CanAttach: 1
+  AllowTwoHanded: 0
   DisableKinematicOnAttach: 1
   EnableKinematicOnDetach: 0
   DropDistance: 1
   EnableGravityOnDetach: 1
-  AttachedHand: {fileID: 0}
+  AttachedHands: []
   InteractionPoint: {fileID: 0}
   OnUseButtonDown:
     m_PersistentCalls:
@@ -391,6 +404,21 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   OnUseButtonUp:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  OnHovering:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  OnBeginInteraction:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  OnEndInteraction:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
@@ -430,3 +458,5 @@ FixedJoint:
   m_BreakTorque: 1
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
