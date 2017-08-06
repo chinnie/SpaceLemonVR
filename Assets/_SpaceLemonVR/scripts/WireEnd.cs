@@ -47,6 +47,7 @@ public class WireEnd : MonoBehaviour
 		currentSocket = socket;
 		currentSocket.currentWire = this;
 		transform.position = socket.transform.position;
+		transform.localEulerAngles = new Vector3(0, 0, -90f);
 		switchBoard.UpdateSwitchboardLights ();
 		//plugin sound
 		//AudioSource.PlayClipAtPoint(pluginSounds[Random.Range(0,pluginSounds.Count)], transform.position, audioVol);
