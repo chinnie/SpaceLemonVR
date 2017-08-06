@@ -392,6 +392,7 @@ namespace NewtonVR
                     break;
 
                 case "vr_controller_vive_1_5":
+				//case "lh_basestation_vive":
 					Transform dk2Trackhat = renderModel.transform.Find("trackhat");
                     if (dk2Trackhat == null)
                     {
@@ -467,7 +468,7 @@ namespace NewtonVR
 			GameObject smallTrigger = new GameObject("small trigger");
 			smallTrigger.transform.SetParent(theParent, false);
 			smallTrigger.transform.localPosition = new Vector3(0, -0.474f, 0);
-			smallTrigger.layer = 11;
+			smallTrigger.layer = 10;
 			SphereCollider trigger = smallTrigger.AddComponent<SphereCollider>();
 			trigger.radius = 0.1f;
 			trigger.isTrigger = true;
