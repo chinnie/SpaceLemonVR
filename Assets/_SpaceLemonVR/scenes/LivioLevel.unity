@@ -2871,7 +2871,7 @@ GameObject:
   - component: {fileID: 1199110320}
   - component: {fileID: 1199110319}
   m_Layer: 0
-  m_Name: TextMeshPro Text
+  m_Name: title text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3607,7 +3607,7 @@ GameObject:
   - component: {fileID: 1532738000}
   - component: {fileID: 1532737999}
   m_Layer: 0
-  m_Name: Image (1)
+  m_Name: rocket icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3993,7 +3993,7 @@ GameObject:
   - component: {fileID: 1571198729}
   - component: {fileID: 1571198728}
   m_Layer: 0
-  m_Name: Image
+  m_Name: bg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
