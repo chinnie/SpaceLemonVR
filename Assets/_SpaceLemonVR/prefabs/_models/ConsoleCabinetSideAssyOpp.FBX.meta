@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: 1cfdf2d6c37744349a2495457c863a35
-timeCreated: 1502001670
+guid: 3784d3ef7e7d4b644a489003671ce5e5
+timeCreated: 1502048216
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: wireSocketInner
-    100004: wireSocketOuter
-    400000: //RootNode
-    400002: wireSocketInner
-    400004: wireSocketOuter
-    2300000: wireSocketInner
-    2300002: wireSocketOuter
-    3300000: wireSocketInner
-    3300002: wireSocketOuter
-    4300000: wireSocketInner
-    4300002: wireSocketOuter
+    100000: ConsoleCabinetKnob001
+    100002: ConsoleCabinetSide001
+    100004: //RootNode
+    400000: ConsoleCabinetKnob001
+    400002: ConsoleCabinetSide001
+    400004: //RootNode
+    2300000: ConsoleCabinetKnob001
+    2300002: ConsoleCabinetSide001
+    3300000: ConsoleCabinetKnob001
+    3300002: ConsoleCabinetSide001
+    4300000: ConsoleCabinetKnob001
+    4300002: ConsoleCabinetSide001
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -45,7 +45,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 50
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importVisibility: 1

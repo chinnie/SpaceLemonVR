@@ -53,8 +53,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4278560068510282}
-  - component: {fileID: 95864059716102356}
-  - component: {fileID: 136140873074588720}
   m_Layer: 0
   m_Name: wirePlugHappy_red
   m_TagString: Untagged
@@ -251,33 +249,3 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1485460600405524}
   m_Mesh: {fileID: 4300000, guid: 49ad727c035d29b49b5a422064b2a0a7, type: 3}
---- !u!95 &95864059716102356
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1755865315875982}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 49ad727c035d29b49b5a422064b2a0a7, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
---- !u!136 &136140873074588720
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1755865315875982}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.025
-  m_Height: 0.07
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
