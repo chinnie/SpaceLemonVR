@@ -5,6 +5,7 @@ using UnityEngine;
 public class SwitchboardLight : MonoBehaviour 
 {
 	private Renderer thisRend;
+	private Light thisLight;
 
 	public int timesActive;
 
@@ -14,6 +15,8 @@ public class SwitchboardLight : MonoBehaviour
 	void Start()
 	{
 		thisRend = GetComponent<Renderer> ();
+		thisLight = GetComponentInChildren<Light> ();
+		thisLight.color = offCol;
 		thisRend.material.SetColor ("_EmissionColor", offCol);
 	}
 
@@ -25,17 +28,25 @@ public class SwitchboardLight : MonoBehaviour
 
 	public void Activate(bool active)
 	{
+		//turn on
 		if (active) 
 		{
 			timesActive += 1;
-			if (timesActive > 0 && onCol != thisRend.material.GetColor ("_EmissionColor"))
+			if (timesActive > 0 && onCol != thisRend.material.GetColor ("_EmissionColor")) 
+			{
 				thisRend.material.SetColor ("_EmissionColor", onCol);
+				thisLight.color = onCol;
+			}
 		} 
+		//turn off
 		else 
 		{
 			timesActive -= 1;
-			if(timesActive < 1 && offCol != thisRend.material.GetColor ("_EmissionColor"))
+			if (timesActive < 1 && offCol != thisRend.material.GetColor ("_EmissionColor")) 
+			{
 				thisRend.material.SetColor ("_EmissionColor", offCol);
+				thisLight.color = offCol;
+			}
 		}
 	}
 }
