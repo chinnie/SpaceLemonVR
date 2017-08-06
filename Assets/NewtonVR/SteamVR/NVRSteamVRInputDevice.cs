@@ -392,7 +392,7 @@ namespace NewtonVR
                     break;
 
                 case "vr_controller_vive_1_5":
-                    Transform dk2Trackhat = renderModel.transform.Find("trackhat");
+					Transform dk2Trackhat = renderModel.transform.Find("trackhat");
                     if (dk2Trackhat == null)
                     {
                         dk2Trackhat = new GameObject("trackhat").transform;
@@ -402,20 +402,23 @@ namespace NewtonVR
                         dk2Trackhat.localScale = Vector3.one * 0.1f;
                         dk2Trackhat.localEulerAngles = new Vector3(325, 0, 0);
                         dk2Trackhat.gameObject.SetActive(true);
-                    }
+					}
                     else
                     {
                         dk2Trackhat.gameObject.SetActive(true);
-                    }
+					}
 
-                    Collider dk2TrackhatCollider = dk2Trackhat.gameObject.GetComponent<SphereCollider>();
+					//Livio's addition:
+					SphereCollider smTrig = makeSmallerTrigger(dk2Trackhat);
+
+					Collider dk2TrackhatCollider = dk2Trackhat.gameObject.GetComponent<SphereCollider>();
                     if (dk2TrackhatCollider == null)
                     {
                         dk2TrackhatCollider = dk2Trackhat.gameObject.AddComponent<SphereCollider>();
                         dk2TrackhatCollider.isTrigger = true;
                     }
 
-                    colliders = new Collider[] { dk2TrackhatCollider };
+                    colliders = new Collider[] { dk2TrackhatCollider, smTrig };
                     break;
                 case "{knuckles}valve_controller_knu_ev1_3_left":
                 case "{knuckles}valve_controller_knu_ev1_3_right":
@@ -458,6 +461,19 @@ namespace NewtonVR
 
             return colliders;
         }
+
+		private SphereCollider makeSmallerTrigger(Transform theParent)
+		{
+			GameObject smallTrigger = new GameObject("small trigger");
+			smallTrigger.transform.SetParent(theParent, false);
+			smallTrigger.transform.localPosition = new Vector3(0, -0.474f, 0);
+			smallTrigger.layer = 11;
+			SphereCollider trigger = smallTrigger.AddComponent<SphereCollider>();
+			trigger.radius = 0.1f;
+			trigger.isTrigger = true;
+
+			return trigger;
+		}
 
         protected static Vector3 SteamVROculusControllerPositionAddition = new Vector3(0.001f, -0.0086f, -0.0197f);
         protected Collider[] AddOculusTouchPhysicalColliders(Transform ModelParent, string controllerModel)
