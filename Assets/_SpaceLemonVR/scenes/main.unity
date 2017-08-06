@@ -20300,7 +20300,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lever: {fileID: 165529308}
-  rumbleLength: 60
+  rumbleLength: 5
   posMagnitude: 0.01
   rotMagnitude: 0.1
 --- !u!4 &1880409035
