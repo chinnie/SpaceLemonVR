@@ -25,7 +25,7 @@ public class RecieveBroadcast : MonoBehaviour {
 	void Update ()
 	{
 
-	    Vector3 facing = transform.forward;
+	    Vector3 facing = transform.up;
 	    float amplitude =  Vector3.Dot(facing, sourceBroadcast); //if facing and sourceBroadcase in same direction will return 1
 
 	    if (amplitude > 0)

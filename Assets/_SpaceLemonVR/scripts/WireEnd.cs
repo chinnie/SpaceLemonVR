@@ -42,6 +42,13 @@ public class WireEnd : MonoBehaviour
 		thisRB.isKinematic = true;
 		currentSocket = socket;
 		transform.position = socket.transform.position;
+
+		//if(0 == ID)
+			//transform.rotation = Quaternion.Euler (socket.attachedRotation0);
+
+		//else
+			//transform.rotation = Quaternion.Euler (socket.attachedRotation1);
+
 		switchBoard.CheckConfig (ID, socket.ID, true);
 	}
 
