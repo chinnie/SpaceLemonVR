@@ -22,7 +22,7 @@ public class Manual : MonoBehaviour
 
 	private void showPage(int page)
 	{
-		for (int j = 0; j < transform.childCount; j++)
+		for (int j = 0; j < canvas.childCount; j++)
 			canvas.GetChild(j).gameObject.SetActive(j == page);
 	}
 }
