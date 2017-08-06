@@ -853,6 +853,12 @@ MonoBehaviour:
   timesActive: 0
   offCol: {r: 1, g: 0, b: 0, a: 1}
   onCol: {r: 0, g: 1, b: 0, a: 1}
+--- !u!114 &122709877 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114959932099822908, guid: 8944deff5b38c41fc9efee626c6ecc23,
+    type: 2}
+  m_PrefabInternal: {fileID: 122709871}
+  m_Script: {fileID: 11500000, guid: 6094c7ea5e950a84e8005d53339e4b07, type: 3}
 --- !u!1001 &127330788
 Prefab:
   m_ObjectHideFlags: 0
@@ -957,6 +963,12 @@ MonoBehaviour:
   timesActive: 0
   offCol: {r: 1, g: 0, b: 0, a: 1}
   onCol: {r: 0, g: 1, b: 0, a: 1}
+--- !u!114 &127330794 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114959932099822908, guid: 8944deff5b38c41fc9efee626c6ecc23,
+    type: 2}
+  m_PrefabInternal: {fileID: 127330788}
+  m_Script: {fileID: 11500000, guid: 6094c7ea5e950a84e8005d53339e4b07, type: 3}
 --- !u!1001 &139654965
 Prefab:
   m_ObjectHideFlags: 0
@@ -1377,6 +1389,12 @@ MonoBehaviour:
   timesActive: 0
   offCol: {r: 1, g: 0, b: 0, a: 1}
   onCol: {r: 0, g: 1, b: 0, a: 1}
+--- !u!114 &178224767 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114959932099822908, guid: 8944deff5b38c41fc9efee626c6ecc23,
+    type: 2}
+  m_PrefabInternal: {fileID: 178224761}
+  m_Script: {fileID: 11500000, guid: 6094c7ea5e950a84e8005d53339e4b07, type: 3}
 --- !u!1001 &179072152
 Prefab:
   m_ObjectHideFlags: 0
@@ -1481,6 +1499,12 @@ MonoBehaviour:
   timesActive: 0
   offCol: {r: 1, g: 0, b: 0, a: 1}
   onCol: {r: 0, g: 1, b: 0, a: 1}
+--- !u!114 &179072158 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114959932099822908, guid: 8944deff5b38c41fc9efee626c6ecc23,
+    type: 2}
+  m_PrefabInternal: {fileID: 179072152}
+  m_Script: {fileID: 11500000, guid: 6094c7ea5e950a84e8005d53339e4b07, type: 3}
 --- !u!1001 &184770026
 Prefab:
   m_ObjectHideFlags: 0
@@ -6330,6 +6354,12 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 467940, guid: 8944deff5b38c41fc9efee626c6ecc23, type: 2}
   m_PrefabInternal: {fileID: 771626022}
+--- !u!114 &771626028 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114959932099822908, guid: 8944deff5b38c41fc9efee626c6ecc23,
+    type: 2}
+  m_PrefabInternal: {fileID: 771626022}
+  m_Script: {fileID: 11500000, guid: 6094c7ea5e950a84e8005d53339e4b07, type: 3}
 --- !u!1001 &773678624
 Prefab:
   m_ObjectHideFlags: 0
@@ -8098,6 +8128,12 @@ MonoBehaviour:
   timesActive: 0
   offCol: {r: 1, g: 0, b: 0, a: 1}
   onCol: {r: 0, g: 1, b: 0, a: 1}
+--- !u!114 &980500644 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114959932099822908, guid: 8944deff5b38c41fc9efee626c6ecc23,
+    type: 2}
+  m_PrefabInternal: {fileID: 980500638}
+  m_Script: {fileID: 11500000, guid: 6094c7ea5e950a84e8005d53339e4b07, type: 3}
 --- !u!1001 &987409420
 Prefab:
   m_ObjectHideFlags: 0
@@ -8306,6 +8342,12 @@ MonoBehaviour:
   timesActive: 0
   offCol: {r: 1, g: 0, b: 0, a: 1}
   onCol: {r: 0, g: 1, b: 0, a: 1}
+--- !u!114 &989527624 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114959932099822908, guid: 8944deff5b38c41fc9efee626c6ecc23,
+    type: 2}
+  m_PrefabInternal: {fileID: 989527618}
+  m_Script: {fileID: 11500000, guid: 6094c7ea5e950a84e8005d53339e4b07, type: 3}
 --- !u!1 &1003995083
 GameObject:
   m_ObjectHideFlags: 0
@@ -9147,6 +9189,12 @@ MonoBehaviour:
   timesActive: 0
   offCol: {r: 1, g: 0, b: 0, a: 1}
   onCol: {r: 0, g: 1, b: 0, a: 1}
+--- !u!114 &1050551206 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114959932099822908, guid: 8944deff5b38c41fc9efee626c6ecc23,
+    type: 2}
+  m_PrefabInternal: {fileID: 1050551200}
+  m_Script: {fileID: 11500000, guid: 6094c7ea5e950a84e8005d53339e4b07, type: 3}
 --- !u!1 &1053376848
 GameObject:
   m_ObjectHideFlags: 0
@@ -10132,6 +10180,12 @@ MonoBehaviour:
   timesActive: 0
   offCol: {r: 1, g: 0, b: 0, a: 1}
   onCol: {r: 0, g: 1, b: 0, a: 1}
+--- !u!114 &1171509167 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114959932099822908, guid: 8944deff5b38c41fc9efee626c6ecc23,
+    type: 2}
+  m_PrefabInternal: {fileID: 1171509161}
+  m_Script: {fileID: 11500000, guid: 6094c7ea5e950a84e8005d53339e4b07, type: 3}
 --- !u!1 &1172815037
 GameObject:
   m_ObjectHideFlags: 0
@@ -11341,6 +11395,12 @@ MonoBehaviour:
   timesActive: 0
   offCol: {r: 1, g: 0, b: 0, a: 1}
   onCol: {r: 0, g: 1, b: 0, a: 1}
+--- !u!114 &1373256247 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114959932099822908, guid: 8944deff5b38c41fc9efee626c6ecc23,
+    type: 2}
+  m_PrefabInternal: {fileID: 1373256241}
+  m_Script: {fileID: 11500000, guid: 6094c7ea5e950a84e8005d53339e4b07, type: 3}
 --- !u!1 &1378025629
 GameObject:
   m_ObjectHideFlags: 0
@@ -21270,6 +21330,12 @@ MonoBehaviour:
   timesActive: 0
   offCol: {r: 1, g: 0, b: 0, a: 1}
   onCol: {r: 0, g: 1, b: 0, a: 1}
+--- !u!114 &1498228096 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114959932099822908, guid: 8944deff5b38c41fc9efee626c6ecc23,
+    type: 2}
+  m_PrefabInternal: {fileID: 1498228090}
+  m_Script: {fileID: 11500000, guid: 6094c7ea5e950a84e8005d53339e4b07, type: 3}
 --- !u!1001 &1502286146
 Prefab:
   m_ObjectHideFlags: 0
@@ -22718,48 +22784,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firstConfig: {x: 1, y: 14}
   firstConfigLights:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 127330794}
+  - {fileID: 1050551206}
   secondConfig: {x: 4, y: 8}
   secondConfigLights:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1171509167}
+  - {fileID: 179072158}
+  - {fileID: 1373256247}
   thirdConfig: {x: 7, y: 16}
   thirdConfigLights:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1749254706}
+  - {fileID: 1050551206}
+  - {fileID: 771626028}
   fourthConfig: {x: 5, y: 12}
   fourthConfigLights:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 127330794}
+  - {fileID: 122709877}
+  - {fileID: 1498228096}
   fifthConfig: {x: 9, y: 19}
   fifthConfigLights:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 178224767}
+  - {fileID: 1749254706}
+  - {fileID: 1498228096}
+  - {fileID: 989527624}
   sixthConfig: {x: 5, y: 15}
   sixthConfigLights:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 178224767}
+  - {fileID: 127330794}
   seventhConfig: {x: 3, y: 18}
   seventhConfigLights:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1050551206}
+  - {fileID: 771626028}
+  - {fileID: 1373256247}
   eighthConfig: {x: 2, y: 12}
   eighthConfigLights:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 771626028}
+  - {fileID: 980500644}
   ninthConfig: {x: 6, y: 17}
   ninthConfigLights:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 989527624}
+  - {fileID: 1749254706}
+  - {fileID: 1988830175}
+  - {fileID: 179072158}
 --- !u!1 &1737470433
 GameObject:
   m_ObjectHideFlags: 0
@@ -22973,6 +23039,12 @@ MonoBehaviour:
   timesActive: 0
   offCol: {r: 1, g: 0, b: 0, a: 1}
   onCol: {r: 0, g: 1, b: 0, a: 1}
+--- !u!114 &1749254706 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114959932099822908, guid: 8944deff5b38c41fc9efee626c6ecc23,
+    type: 2}
+  m_PrefabInternal: {fileID: 1749254700}
+  m_Script: {fileID: 11500000, guid: 6094c7ea5e950a84e8005d53339e4b07, type: 3}
 --- !u!1001 &1750364268
 Prefab:
   m_ObjectHideFlags: 0
@@ -43308,6 +43380,12 @@ MonoBehaviour:
   timesActive: 0
   offCol: {r: 1, g: 0, b: 0, a: 1}
   onCol: {r: 0, g: 1, b: 0, a: 1}
+--- !u!114 &1988830175 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114959932099822908, guid: 8944deff5b38c41fc9efee626c6ecc23,
+    type: 2}
+  m_PrefabInternal: {fileID: 1988830169}
+  m_Script: {fileID: 11500000, guid: 6094c7ea5e950a84e8005d53339e4b07, type: 3}
 --- !u!1 &1988982332
 GameObject:
   m_ObjectHideFlags: 0
