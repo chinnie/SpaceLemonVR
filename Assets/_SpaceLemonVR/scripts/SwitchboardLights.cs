@@ -5,8 +5,6 @@ using UnityEngine;
 public class SwitchboardLights : MonoBehaviour 
 {
 	private List<SwitchboardLight> lights = new List<SwitchboardLight>();
-	//private List<SwitchboardLight> lightsToTurnOff = new List<SwitchboardLight>();
-	//private List<SwitchboardLight> lightsToTurnOn = new List<SwitchboardLight>();
 	private List<WireSocket> sockets = new List<WireSocket> ();
 	private bool firstConfigActive;
 	private bool secondConfigActive;
@@ -78,16 +76,6 @@ public class SwitchboardLights : MonoBehaviour
 		CheckSeventhConfig ();
 		CheckEighthConfig ();
 		CheckNinthConfig ();
-		/*
-		foreach (SwitchboardLight li in lightsToTurnOn)
-			li.Activate (true);
-
-		foreach (SwitchboardLight lig in lightsToTurnOff)
-			lig.Activate (false);
-
-		lightsToTurnOn.Clear ();
-		lightsToTurnOff.Clear ();
-		*/
 	}
 
 	private void CheckFirstConfig()
