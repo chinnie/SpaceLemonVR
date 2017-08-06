@@ -559,6 +559,21 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1624722327}
+    - target: {fileID: 114189617166392706, guid: 446d4be5f1bf24842b8e3cb68e4b5237,
+        type: 2}
+      propertyPath: sourceBroadcast.x
+      value: -0.866
+      objectReference: {fileID: 0}
+    - target: {fileID: 114189617166392706, guid: 446d4be5f1bf24842b8e3cb68e4b5237,
+        type: 2}
+      propertyPath: sourceBroadcast.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114189617166392706, guid: 446d4be5f1bf24842b8e3cb68e4b5237,
+        type: 2}
+      propertyPath: sourceBroadcast.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 446d4be5f1bf24842b8e3cb68e4b5237, type: 2}
   m_IsPrefabParent: 0
@@ -1397,6 +1412,18 @@ Prefab:
         type: 2}
       propertyPath: m_Axis.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924375745261548, guid: e26d4a981685d1a4b92eb9d7f656d51a, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924375745261548, guid: e26d4a981685d1a4b92eb9d7f656d51a, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4924375745261548, guid: e26d4a981685d1a4b92eb9d7f656d51a, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e26d4a981685d1a4b92eb9d7f656d51a, type: 2}

@@ -12,6 +12,7 @@ public class OrderReplacement : MonoBehaviour
     [SerializeField] private float timeToWait;
     private float time;
     private bool buttonPressed;
+    private bool boxArrive; //restore if you only ever want one box
 
 
     // Use this for initialization
@@ -19,9 +20,10 @@ public class OrderReplacement : MonoBehaviour
     {
 
         time = 0;
-        box.SetActive(false);
+       
         panelToRemove.SetActive(true);
         buttonPressed = false;
+       // boxArrive = false; //restore if you only ever want one box
 
     }
 
@@ -33,13 +35,18 @@ public class OrderReplacement : MonoBehaviour
         {
             buttonPressed = true;
         }
-        if (buttonPressed && communicationReciever.signal)
+        if (buttonPressed && communicationReciever.signal && !boxArrive)
         {
             time += Time.deltaTime;
             if (time > timeToWait)
             {
-                box.SetActive(true);
+                GameObject.Instantiate(box, panelToRemove.transform.position, panelToRemove.transform.rotation);
                 panelToRemove.SetActive(false);
+                // boxArrive = true; //restore if you only ever want one box
+
+                //once box arrives if you do these steps again you can get another box
+                buttonPressed = false;
+                time = 0;
             }
         }
         else

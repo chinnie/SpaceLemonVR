@@ -8,14 +8,23 @@ public class GravityDisengage : MonoBehaviour {
 	void Start () {
 		
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+
+    // Update is called once per frame
+    void Update()
+    {
+
+        if (Physics.gravity.y > 0)
+        {
+            Physics.gravity = Vector3.zero;
+        }
+
+    }
 
     void OnCollisionExit(Collision collisionInfo)
     {
-        Physics.gravity = Vector3.zero;
+        Physics.gravity = new Vector3(0, 50, 0);
+
+
     }
 }
