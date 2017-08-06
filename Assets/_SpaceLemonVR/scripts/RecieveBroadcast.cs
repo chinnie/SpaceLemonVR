@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,7 +8,10 @@ public class RecieveBroadcast : MonoBehaviour {
     [SerializeField] private AudioSource backgroundStatic;
     [SerializeField] private AudioSource broadcastMessage;
     [SerializeField] private Vector3 sourceBroadcast;
-    [SerializeField] private float sensativity = 1.0f; 
+    [SerializeField] private float maxAudibleAngle;
+
+    public Boolean signal;
+    private float maxAudibleCos;
 
 
 
@@ -17,7 +21,9 @@ public class RecieveBroadcast : MonoBehaviour {
 
         backgroundStatic.volume = 1;
         broadcastMessage.volume = 0;
-
+        signal = false;
+        maxAudibleCos = Mathf.Cos(maxAudibleAngle * Mathf.Deg2Rad);
+        
 
     }
 	
@@ -27,16 +33,28 @@ public class RecieveBroadcast : MonoBehaviour {
 
 	    Vector3 facing = transform.up;
 	    float amplitude =  Vector3.Dot(facing, sourceBroadcast); //if facing and sourceBroadcase in same direction will return 1
+        //Debug.Log(amplitude);
+	    amplitude = (amplitude - maxAudibleCos) / (1 - maxAudibleCos);
 
 	    if (amplitude > 0)
 	    {
 	        broadcastMessage.volume = amplitude;
 	        backgroundStatic.volume = 1 - amplitude;
-	    }
+	        if (amplitude > .87)
+	        {
+	            signal = true;
+	        }
+	        else
+	        {
+	            signal = false;
+	        }
+	       
+                }
 	    else
 	    {
             backgroundStatic.volume = 1;
             broadcastMessage.volume = 0;
-        }
+	        signal = false;
+	    }
 	}
 }
