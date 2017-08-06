@@ -310,36 +310,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 59081287860371972, guid: e26d4a981685d1a4b92eb9d7f656d51a,
-        type: 2}
-      propertyPath: m_Axis.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 59081287860371972, guid: e26d4a981685d1a4b92eb9d7f656d51a,
-        type: 2}
-      propertyPath: m_Axis.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 59326046392471148, guid: e26d4a981685d1a4b92eb9d7f656d51a,
-        type: 2}
-      propertyPath: m_Axis.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 59326046392471148, guid: e26d4a981685d1a4b92eb9d7f656d51a,
-        type: 2}
-      propertyPath: m_ConnectedAnchor.y
-      value: 0.5049772
-      objectReference: {fileID: 0}
-    - target: {fileID: 59326046392471148, guid: e26d4a981685d1a4b92eb9d7f656d51a,
-        type: 2}
-      propertyPath: m_ConnectedAnchor.z
-      value: -0.00000001103613
-      objectReference: {fileID: 0}
-    - target: {fileID: 59326046392471148, guid: e26d4a981685d1a4b92eb9d7f656d51a,
-        type: 2}
-      propertyPath: m_Axis.x
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e26d4a981685d1a4b92eb9d7f656d51a, type: 2}
   m_IsPrefabParent: 0
