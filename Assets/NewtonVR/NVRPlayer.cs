@@ -151,6 +151,10 @@ namespace NewtonVR
         public bool AutoSetFixedDeltaTime = true;
         public bool NotifyOnVersionUpdate = true;
 
+		//cdr
+		[SerializeField] private float yAdjustRift;
+		//
+
         private void Awake()
         {
             if (AutoSetFixedDeltaTime)
@@ -196,6 +200,12 @@ namespace NewtonVR
             {
                 OnInitialized.Invoke();
             }
+
+			//cdr
+			//adjust rift player starting height
+			if ("Oculus" == VRSettings.loadedDeviceName) 
+				transform.position = new Vector3 (transform.position.x, transform.position.y + yAdjustRift, transform.position.z);
+			//
         }
 
         private void SetupIntegration(bool logOutput = true)
