@@ -57,4 +57,10 @@ public class RecieveBroadcast : MonoBehaviour {
 	        signal = false;
 	    }
 	}
+
+   public void increaseAudioRange()
+   {
+       backgroundStatic.maxDistance = 1;
+       broadcastMessage.maxDistance = 1;
+   }
 }

@@ -593,7 +593,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   peanuts: {fileID: 1811998920831318}
-  gift: {fileID: 1000010427675966, guid: 008e074500f780b438c7fe39166bca1a, type: 2}
+  gift: {fileID: 1094789069400594, guid: 3e364fb31a5d6114aa78b25900c6c0c1, type: 2}
 --- !u!114 &114832364253925094
 MonoBehaviour:
   m_ObjectHideFlags: 1
