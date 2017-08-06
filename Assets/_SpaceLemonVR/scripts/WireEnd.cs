@@ -7,7 +7,8 @@ public class WireEnd : MonoBehaviour
 	private Rigidbody thisRB;
 	private SwitchboardLights switchBoard;
 
-	[SerializeField] private int ID;
+	public int ID;
+
 	[SerializeField] private WireSocket startingSocket;
 
 	[HideInInspector] public WireSocket currentSocket;
@@ -22,41 +23,34 @@ public class WireEnd : MonoBehaviour
 	void OnTriggerStay(Collider hit)
 	{
 		if (hit.GetComponent<WireSocket> () && null == currentSocket && thisRB.useGravity) 
-		{
 			AttachToSocket (hit.GetComponent<WireSocket>());
-			Debug.Log ("attach 2");
-		}
 	}
 
 	void OnTriggerExit(Collider hit)
 	{
 		if (hit.GetComponent<WireSocket> () && null != currentSocket) 
-		{
 			DetachFromSocket ();
-			Debug.Log ("detach 2");
-		}
 	}
 
 	private void AttachToSocket(WireSocket socket)
 	{
+		//don't plug into full slot
+		if (null != socket.currentWire)
+			return;
+
 		thisRB.isKinematic = true;
 		currentSocket = socket;
+		currentSocket.currentWire = this;
 		transform.position = socket.transform.position;
-
-		//if(0 == ID)
-			//transform.rotation = Quaternion.Euler (socket.attachedRotation0);
-
-		//else
-			//transform.rotation = Quaternion.Euler (socket.attachedRotation1);
-
-		switchBoard.CheckConfig (ID, socket.ID, true);
+		switchBoard.UpdateSwitchboardLights ();
 	}
 
 	public void DetachFromSocket()
 	{
 		if (null != currentSocket) 
 		{
-			switchBoard.CheckConfig (ID, currentSocket.ID, false);
+			currentSocket.currentWire = null;
+			switchBoard.UpdateSwitchboardLights ();
 			currentSocket = null;
 		}
 	}
