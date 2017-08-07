@@ -7,6 +7,9 @@ public class GravityDisengage : MonoBehaviour
     [SerializeField] private  GameObject driveBase;
     private Vector3 gravitySet;
 
+	[SerializeField] private AudioSource gravLeverSound;
+	[SerializeField] private AudioSource gravHumSound;
+
 	// Use this for initialization
 	void Start ()
 	{
@@ -27,6 +30,13 @@ public class GravityDisengage : MonoBehaviour
 
     }
 
+	private IEnumerator WaitingToHum()
+	{
+		gravLeverSound.Play ();
+		yield return new WaitForSeconds (2);
+		gravHumSound.Play ();
+	}
+
     void OnCollisionExit(Collision collisionInfo)
     {
        
@@ -34,6 +44,7 @@ public class GravityDisengage : MonoBehaviour
         if (driveBase == collisionInfo.gameObject)
         {
             Physics.gravity = new Vector3(0, 50, 0); ;
+			StartCoroutine (WaitingToHum ());
         }
 
 
@@ -44,6 +55,7 @@ public class GravityDisengage : MonoBehaviour
         if (driveBase == other.gameObject)
         {
             Physics.gravity = gravitySet;
+			gravHumSound.Stop ();
         }
     }
 }
