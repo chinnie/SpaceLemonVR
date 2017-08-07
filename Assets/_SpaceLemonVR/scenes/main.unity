@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.022842664, g: 0.011234282, b: 0.040441006, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1354,9 +1354,9 @@ Transform:
   - {fileID: 1471888495}
   - {fileID: 402996344}
   - {fileID: 325682791}
+  - {fileID: 1648693088}
   - {fileID: 1187381900}
   - {fileID: 1186304008}
-  - {fileID: 1648693088}
   m_Father: {fileID: 1880409035}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2173,6 +2173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentWire: {fileID: 0}
+  sparks: {fileID: 0}
 --- !u!23 &250481616
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2436,6 +2437,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentWire: {fileID: 0}
+  sparks: {fileID: 0}
 --- !u!1001 &313995294
 Prefab:
   m_ObjectHideFlags: 0
@@ -8387,6 +8389,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentWire: {fileID: 0}
+  sparks: {fileID: 0}
 --- !u!1 &417905038
 GameObject:
   m_ObjectHideFlags: 0
@@ -8445,6 +8448,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentWire: {fileID: 0}
+  sparks: {fileID: 0}
 --- !u!23 &417905042
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9069,6 +9073,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentWire: {fileID: 0}
+  sparks: {fileID: 0}
 --- !u!23 &469440880
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10865,6 +10870,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentWire: {fileID: 0}
+  sparks: {fileID: 0}
 --- !u!23 &616977816
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11695,6 +11701,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentWire: {fileID: 0}
+  sparks: {fileID: 0}
 --- !u!23 &680926849
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12096,6 +12103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentWire: {fileID: 0}
+  sparks: {fileID: 0}
 --- !u!23 &707605473
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16079,6 +16087,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentWire: {fileID: 0}
+  sparks: {fileID: 0}
 --- !u!23 &815021199
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16606,6 +16615,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentWire: {fileID: 0}
+  sparks: {fileID: 0}
 --- !u!23 &943951829
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -17903,6 +17913,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentWire: {fileID: 0}
+  sparks: {fileID: 0}
 --- !u!23 &1022968624
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18012,6 +18023,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentWire: {fileID: 0}
+  sparks: {fileID: 0}
 --- !u!23 &1027530259
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -18377,6 +18389,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentWire: {fileID: 0}
+  sparks: {fileID: 0}
 --- !u!1001 &1050551200
 Prefab:
   m_ObjectHideFlags: 0
@@ -19278,6 +19291,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentWire: {fileID: 0}
+  sparks: {fileID: 0}
 --- !u!23 &1119652859
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19497,6 +19511,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentWire: {fileID: 0}
+  sparks: {fileID: 0}
 --- !u!23 &1182984024
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19585,7 +19600,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4174358281438704, guid: 0008988f6c7d3334dba93fef2cc5fe6f, type: 2}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4174358281438704, guid: 0008988f6c7d3334dba93fef2cc5fe6f, type: 2}
       propertyPath: m_LocalScale.x
@@ -19676,7 +19691,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4224033511208242, guid: 382fa29efb9e7844f83a7f811f8aa3c8, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4224033511208242, guid: 382fa29efb9e7844f83a7f811f8aa3c8, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -20369,6 +20384,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentWire: {fileID: 0}
+  sparks: {fileID: 0}
 --- !u!1 &1291032573
 GameObject:
   m_ObjectHideFlags: 0
@@ -21195,6 +21211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentWire: {fileID: 0}
+  sparks: {fileID: 0}
 --- !u!23 &1438781988
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22561,6 +22578,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentWire: {fileID: 0}
+  sparks: {fileID: 0}
 --- !u!23 &1618232333
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22868,7 +22886,7 @@ Transform:
   - {fileID: 124100526}
   - {fileID: 354293211}
   m_Father: {fileID: 175631978}
-  m_RootOrder: 13
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 128.931, z: 0}
 --- !u!1 &1649304547
 GameObject:
@@ -23696,6 +23714,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentWire: {fileID: 0}
+  sparks: {fileID: 0}
 --- !u!23 &1737470437
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24682,6 +24701,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentWire: {fileID: 0}
+  sparks: {fileID: 0}
 --- !u!23 &1787128209
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -25037,6 +25057,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentWire: {fileID: 0}
+  sparks: {fileID: 0}
 --- !u!1001 &1803597373
 Prefab:
   m_ObjectHideFlags: 0
@@ -25796,6 +25817,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1880409035}
   - component: {fileID: 1880409034}
+  - component: {fileID: 1880409036}
   m_Layer: 0
   m_Name: spaceship
   m_TagString: Untagged
@@ -25834,6 +25856,86 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1880409036
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1880409033}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1001 &1891527359
 Prefab:
   m_ObjectHideFlags: 0
