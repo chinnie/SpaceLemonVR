@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace NewtonVR
 {
@@ -35,9 +36,15 @@ namespace NewtonVR
         private Quaternion InitialLocalRotation;
         private Quaternion ConstrainedRotation;
 
+		[SerializeField] private List<AudioClip> pressSounds = new List<AudioClip>();
+		private AudioSource aSource;
+		[SerializeField] private float vol;
+
         private void Awake()
         {
-            InitialPosition = new GameObject(string.Format("[{0}] Initial Position", this.gameObject.name)).transform;
+			aSource = GetComponent<AudioSource> ();
+
+			InitialPosition = new GameObject(string.Format("[{0}] Initial Position", this.gameObject.name)).transform;
             InitialPosition.parent = this.transform.parent;
             InitialPosition.localPosition = Vector3.zero;
             InitialPosition.localRotation = Quaternion.identity;
@@ -72,8 +79,11 @@ namespace NewtonVR
             ButtonWasPushed = ButtonIsPushed;
             ButtonIsPushed = CurrentDistance > DistanceToEngage;
 
-            if (ButtonWasPushed == false && ButtonIsPushed == true)
-                ButtonDown = true;
+			if (ButtonWasPushed == false && ButtonIsPushed == true) 
+			{
+				ButtonDown = true;
+				aSource.PlayOneShot (pressSounds[Random.Range(0,pressSounds.Count)], vol);
+			}
             else
                 ButtonDown = false;
 
