@@ -34,6 +34,7 @@ public class OrderReplacement : MonoBehaviour
         if (button.ButtonDown)
         {
             buttonPressed = true;
+            gameObject.GetComponent<AudioSource>().Play();
             communicationReciever.increaseAudioRange();
         }
         if (buttonPressed && communicationReciever.signal && !boxArrive)

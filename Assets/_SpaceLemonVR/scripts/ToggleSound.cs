@@ -24,6 +24,10 @@ public class ToggleSound : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (button.ButtonDown)
+        {
+            gameObject.GetComponent<AudioSource>().Play();
+        }
 
         if (button.ButtonDown && buttonPressed == false)
         {
@@ -32,6 +36,7 @@ public class ToggleSound : MonoBehaviour
             speakers.clip = soundToPlay;
             speakers.Play();
             speakers.volume = 1;
+            
 
 
         } else if (button.ButtonDown && buttonPressed == true)

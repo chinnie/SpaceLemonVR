@@ -24,6 +24,7 @@ public class GiveItem : MonoBehaviour
         if (button.ButtonDown)
         {
             GameObject.Instantiate(itemToGive, deliveryObject.transform.position, deliveryObject.transform.rotation);
+            gameObject.GetComponent<AudioSource>().Play();
 
         }
     }
