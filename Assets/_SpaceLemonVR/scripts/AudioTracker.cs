@@ -5,6 +5,7 @@ public class AudioTracker : MonoBehaviour
 	public AudioSource track1;
 	public AudioSource track2;
 	public NewtonVR.NVRLever lever;
+	public float volume;
 
 	public float fadeTime1;
 	public float fadeTime2;
@@ -19,10 +20,10 @@ public class AudioTracker : MonoBehaviour
 
 		float currentTime = Time.time;
 
-		track1.volume = Mathf.Min(currentTime / fadeTime1, 1);
+		track1.volume = Mathf.Min((currentTime / fadeTime1) * volume, volume);
 
 		if(isPlayingTrack2)
-			track2.volume = Mathf.Min((currentTime - track2StartTime) / fadeTime2, 1);
+			track2.volume = Mathf.Min(((currentTime - track2StartTime) / fadeTime2) * volume, volume);
 	}
 
 	public void playTrack2()

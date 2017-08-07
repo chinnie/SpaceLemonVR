@@ -3,6 +3,7 @@
 public class SpaceshipRumble : MonoBehaviour
 {
 	public NewtonVR.NVRLever lever;
+	public AudioSource aud;
 	public float rumbleLength;
 	public float posMagnitude;
 	public float rotMagnitude;
@@ -24,7 +25,7 @@ public class SpaceshipRumble : MonoBehaviour
 	{
 		if (hasRumbled)
 			return;
-
+		aud.Play();
 		hasRumbled = true;
 		isRumbling = true;
 		rumbleStarted = Time.time;
