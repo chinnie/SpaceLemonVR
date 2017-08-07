@@ -37,7 +37,7 @@ public class OrderReplacement : MonoBehaviour
             gameObject.GetComponent<AudioSource>().Play();
             communicationReciever.increaseAudioRange();
         }
-		Debug.Log(buttonPressed + " " + communicationReciever.signal + " " + !boxArrive);
+		//Debug.Log(buttonPressed + " " + communicationReciever.signal + " " + !boxArrive);
         if (buttonPressed && communicationReciever.signal && !boxArrive)
         {
             time += Time.deltaTime;
