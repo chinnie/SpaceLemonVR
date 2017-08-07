@@ -49,8 +49,9 @@ public class WireEnd : MonoBehaviour
 		transform.position = socket.transform.position;
 		switchBoard.UpdateSwitchboardLights ();
 		//plugin sound
-		//AudioSource.PlayClipAtPoint(pluginSounds[Random.Range(0,pluginSounds.Count)], transform.position, audioVol);
 		aSource.PlayOneShot (pluginSounds [Random.Range (0, pluginSounds.Count)], audioVol);
+		//fx
+		socket.sparks.Play();
 	}
 
 	public void DetachFromSocket()
@@ -59,10 +60,11 @@ public class WireEnd : MonoBehaviour
 		{
 			currentSocket.currentWire = null;
 			switchBoard.UpdateSwitchboardLights ();
-			currentSocket = null;
 			//plugout sound
-			//AudioSource.PlayClipAtPoint(plugoutSounds[Random.Range(0,plugoutSounds.Count)], transform.position, audioVol);
 			aSource.PlayOneShot (plugoutSounds [Random.Range (0, plugoutSounds.Count)], audioVol);
+			//fx
+			currentSocket.sparks.Play();
+			currentSocket = null;
 		}
 	}
 }
