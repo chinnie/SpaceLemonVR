@@ -6,10 +6,19 @@ public class SpaceshipRumble : MonoBehaviour
 	public float rumbleLength;
 	public float posMagnitude;
 	public float rotMagnitude;
+	public float skyRotationNew;
 
 	private float rumbleStarted;
 	private bool isRumbling = false;
 	private bool hasRumbled = false;
+	private RotateSkybox skyMover;
+	private float skyRotationOld;
+
+	void Start()
+	{
+		skyMover = FindObjectOfType<RotateSkybox> ();
+		skyRotationOld = skyMover.rotation;
+	}
 
 	public void startRumble()
 	{
@@ -19,6 +28,7 @@ public class SpaceshipRumble : MonoBehaviour
 		hasRumbled = true;
 		isRumbling = true;
 		rumbleStarted = Time.time;
+		skyMover.rotation = skyRotationNew;
 	}
 
 	private void Update()
@@ -34,6 +44,7 @@ public class SpaceshipRumble : MonoBehaviour
 			isRumbling = false;
 			transform.localPosition = Vector3.zero;
 			transform.localEulerAngles = Vector3.zero;
+			skyMover.rotation = skyRotationOld;
 			return;
 		}
 

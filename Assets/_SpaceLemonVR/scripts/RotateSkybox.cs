@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RotateSkybox : MonoBehaviour 
 {
-	[SerializeField] private float rotation;
+	public float rotation;
 
 	void Update () 
 	{
