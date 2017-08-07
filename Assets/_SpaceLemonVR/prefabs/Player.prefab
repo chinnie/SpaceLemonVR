@@ -40,6 +40,7 @@ GameObject:
   - component: {fileID: 114817798480040152}
   - component: {fileID: 114666219059265736}
   - component: {fileID: 114019151224577486}
+  - component: {fileID: 114844698132928942}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -380,6 +381,23 @@ MonoBehaviour:
   LaserEndWidth: 0.001
   OnCanvas: 0
   CanvasUsed: 0
+--- !u!114 &114844698132928942
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1249981191256624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 212f5e7cc57f66541acbb0f0f0476aef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SoundPoolSize: 100
+  PitchModulationEnabled: 1
+  PitchModulationRange: 0.5
+  MinCollisionVolume: 0.1
+  MaxCollisionVelocity: 5
+  SoundEngine: 1
 --- !u!124 &124030150743845408
 Behaviour:
   m_ObjectHideFlags: 1
