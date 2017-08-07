@@ -23,7 +23,7 @@ public class GeneratePeanuts : MonoBehaviour {
 	        GameObject.Instantiate(peanuts, position, Quaternion.identity);
 	    }
 
-	    GameObject.Instantiate(gift, transform.position, Quaternion.identity);
+	    GameObject.Instantiate(gift, transform.parent.position, Quaternion.identity);
 
 	}
 	
