@@ -5,10 +5,11 @@ using UnityEngine;
 
 public class ToggleSound : MonoBehaviour
 {
-    [SerializeField] private AudioClip soundToPlay;
+    [SerializeField] private AudioClip[] soundsToPlay;
     [SerializeField] private AudioSource speakers;
     [SerializeField] private NVRButton button;
     private bool buttonPressed;
+    private int soundIndex;
 
 
 
@@ -16,9 +17,11 @@ public class ToggleSound : MonoBehaviour
     void Start()
     {
         buttonPressed = true;
+        soundIndex = 0;
         //play sound
-        speakers.clip = soundToPlay;
+        speakers.clip = soundsToPlay[soundIndex];
         speakers.Play();
+        
     }
 
     // Update is called once per frame
@@ -33,7 +36,7 @@ public class ToggleSound : MonoBehaviour
         {
             buttonPressed = true;
             //play sound
-            speakers.clip = soundToPlay;
+            speakers.clip = soundsToPlay[soundIndex];
             speakers.Play();
             speakers.volume = 1;
             
@@ -43,9 +46,17 @@ public class ToggleSound : MonoBehaviour
         {
             buttonPressed = false;
             //stop sound
-            speakers.clip = soundToPlay;
+            speakers.clip = soundsToPlay[soundIndex];
             speakers.Stop();
             speakers.volume = 0;
+            if (soundIndex < soundsToPlay.Length - 1)
+            {
+                soundIndex += 1;
+            }
+            else
+            {
+                soundIndex = 0;
+            }
         }
     }
 }
