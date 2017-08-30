@@ -20,7 +20,7 @@ public class ToggleSound : MonoBehaviour
         soundIndex = 0;
         //play sound
         speakers.clip = soundsToPlay[soundIndex];
-        speakers.Play();
+        
         
     }
 

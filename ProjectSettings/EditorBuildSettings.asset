@@ -4,4 +4,7 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/_SpaceLemonVR/scenes/main.unity
+    guid: 060e491606f644e4abae4d40e3c1e46e
