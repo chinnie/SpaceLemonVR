@@ -6,7 +6,7 @@ using UnityEngine;
 public class GiveItem : MonoBehaviour
 {
     [SerializeField]
-    private GameObject itemToGive;
+    private GameObject[] itemToGive;
 
     [SerializeField]
     private NVRButton button;
@@ -14,8 +14,11 @@ public class GiveItem : MonoBehaviour
     [SerializeField]
     private GameObject deliveryObject;
 
+
+
     // Use this for initialization
     void Start() {}
+
 
     // Update is called once per frame
     void Update()
@@ -23,7 +26,8 @@ public class GiveItem : MonoBehaviour
 
         if (button.ButtonDown)
         {
-            GameObject.Instantiate(itemToGive, deliveryObject.transform.position, deliveryObject.transform.rotation);
+            int randomItemIndex = (Random.Range(0, itemToGive.Length - 1)); 
+            GameObject.Instantiate(itemToGive[randomItemIndex], deliveryObject.transform.position, deliveryObject.transform.rotation);
             gameObject.GetComponent<AudioSource>().Play();
 
         }
